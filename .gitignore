@@ -1,0 +1,11 @@
+# IDE
+.idea
+
+# deps
+/vendor/
+
+# config
+.env
+
+# dev
+uploads
