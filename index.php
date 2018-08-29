@@ -68,8 +68,8 @@ try {
   // You should name it uniquely.
   // DO NOT USE $_FILES['upfile']['name'] WITHOUT ANY VALIDATION !!
   // On this example, obtain safe unique name from its binary data.
-  $folder = $_POST['to'] ? trim($_POST['to']) : date('Ymd-His');
-  $folder = getenv('SAVE_TO') . $folder;
+  $to = $_POST['to'] ? trim($_POST['to']) : date('Ymd-His');
+  $folder = getenv('SAVE_TO') . $to;
   if (!is_dir($folder)) {
     mkdir($folder, 0777, true);
   }
@@ -83,7 +83,7 @@ try {
     throw new RuntimeException('Failed to move uploaded file.');
   }
 
-  echo 'File is uploaded successfully.';
+  echo 'File is uploaded successfully. Save to ' . $to;
 
 } catch (RuntimeException $e) {
 
