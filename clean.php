@@ -9,7 +9,7 @@ if (php_sapi_name() !== 'cli') {
   exit('Only in CLI.');
 }
 
-$base = 'uploads';
+$base = __DIR__ . '/uploads';
 $handle = opendir($base);
 if (!$handle) {
   exit('Failed to read dir');
