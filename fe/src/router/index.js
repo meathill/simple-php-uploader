@@ -3,6 +3,8 @@ import VueRouter from 'vue-router';
 import Root from '../components/root';
 import Folder from '../components/folder';
 
+/* global ROUTE_BASE */
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -19,6 +21,7 @@ const routes = [
 ];
 
 const router = new VueRouter({
+  base: ROUTE_BASE,
   mode: 'history',
   scrollBehavior: (to) => {
     if (to.hash) {
