@@ -1,4 +1,4 @@
-import base from './dev';
+const base = require('./dev');
 
 base.BASE_URL = '/';
 
