@@ -11,7 +11,7 @@
       | {{item}}
 
   .preview(v-if="src")
-    img(:src="BASE_URL + '/uploads/' + id + '/' + src")
+    img(:src="BASE_URL + 'uploads/' + id + '/' + src")
 </template>
 
 <script>
