@@ -4,6 +4,7 @@ const config = devMode ? require('./config/dev') : require('./config/prod');
 
 module.exports = {
   productionSourceMap: false,
+  publicPath: devMode ? '/' : '/admin/',
   pages: {
     index: {
       entry: './src/main.js',

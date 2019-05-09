@@ -64,8 +64,7 @@ server {
 
 	location /admin {
 	  root fe/dist;
-	  index index.html;
-	  try_files $uri $uri/ /index.html?$args;
+	  try_files $uri $uri/ index.html?$args;
 	}
 
 	location /fe {
