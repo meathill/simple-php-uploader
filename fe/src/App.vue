@@ -2,7 +2,20 @@
 #app.container
   nav(aria-label="breadcrumb")
     ol.breadcrumb
-      li.breadcrumb-item.active(aria-current="page") {{title | capitalize}}
+      li.breadcrumb-item(
+        :aria-current="$route.name === 'root' ? 'page' : null",
+        :class="{active: $route.name === 'root'}",
+      )
+        template(v-if="$route.name === 'root'") {{title | capitalize}}
+        router-link(
+          v-else,
+          :to="{name: 'root'}",
+        ) Root
+
+      li.breadcrumb-item.active(
+        v-if="$route.name !== 'root'",
+        aria-current="page",
+      ) {{$route.params.id}}
   router-view
 </template>
 
