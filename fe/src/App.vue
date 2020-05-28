@@ -20,10 +20,10 @@
 </template>
 
 <script>
-import {capitalize} from 'lodash';
+import capitalize from 'lodash/capitalize';
 
 export default {
-  name: 'app',
+  name: 'App',
 
   filters: {
     capitalize,
@@ -34,5 +34,5 @@ export default {
       return this.$route.name || '';
     },
   },
-}
+};
 </script>

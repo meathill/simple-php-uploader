@@ -1,4 +1,4 @@
 module.exports = {
-  BASE_URL: 'http://localhost:8090/',
+  BASE_URL: '',
   ROUTE_BASE: '/',
 };

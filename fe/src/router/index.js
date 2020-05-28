@@ -17,7 +17,7 @@ const routes = [
     path: '/:id',
     name: 'folder',
     component: Folder,
-  }
+  },
 ];
 
 const router = new VueRouter({

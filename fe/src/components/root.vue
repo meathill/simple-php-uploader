@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import http from "../service/http";
+import http from '../service/http';
 
 export default {
   data() {
@@ -22,6 +22,6 @@ export default {
       .then(data => {
         this.list = data;
       });
-  }
-}
+  },
+};
 </script>

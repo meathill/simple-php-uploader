@@ -48,7 +48,10 @@ export default {
     })
       .then(data => {
         this.list = data;
+        if (data.length === 1) {
+          this.doView(data[0]);
+        }
       });
   },
-}
+};
 </script>
