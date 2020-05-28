@@ -8,8 +8,8 @@
             "email": "meathill@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
-        "vlucas/phpdotenv": "^2.5@dev"
+        "vlucas/phpdotenv": "^2.6"
     }
 }
