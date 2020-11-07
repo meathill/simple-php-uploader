@@ -1,0 +1,25 @@
+.bi
+  background-color: currentColor
+  mask-size 1em
+  mask-repeat no-repeat
+  mask-position center
+
+  &::before
+    display inline-block
+    content ''
+    width 1em
+
+for $icon in image-fill
+  $path = '../../node_modules/bootstrap-icons/icons/' + $icon + '.svg'
+  .bi-{$icon}
+    mask-image url($path)
+
+.bi-spin
+  display inline-block
+  animation: bi-spin 2s infinite linear
+
+@keyframes bi-spin
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)

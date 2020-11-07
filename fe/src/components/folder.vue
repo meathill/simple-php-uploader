@@ -7,7 +7,7 @@
       :class="{active: item === src}",
       @click="doView(item)",
     )
-      i.fas.fa-picture.mr-2
+      i.bi.bi-image.mr-2
       | {{item}}
 
   .preview(v-if="src")
