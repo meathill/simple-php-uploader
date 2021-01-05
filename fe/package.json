@@ -8,7 +8,7 @@
     "lint": "eslint ./ --fix --ext=.js,.vue"
   },
   "dependencies": {
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.5.2",
     "bootstrap-icons": "^1.0.0",
     "lodash": "^4.17.20",
