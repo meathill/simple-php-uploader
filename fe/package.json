@@ -10,7 +10,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
-    "bootstrap-icons": "^1.4.0",
+    "bootstrap-icons": "^1.4.1",
     "lodash": "^4.17.21",
     "vue": "^2.6.12",
     "vue-router": "^3.5.1"
@@ -19,15 +19,14 @@
     "@vue/cli-plugin-babel": "^4.5.12",
     "@vue/cli-service": "^4.5.12",
     "babel-eslint": "^10.1.0",
-    "core-js": "^3.9.1",
-    "eslint": "^7.23.0",
+    "core-js": "^3.11.3",
+    "eslint": "^7.25.0",
     "eslint-plugin-babel": "^5.3.1",
-    "eslint-plugin-vue": "^7.8.0",
+    "eslint-plugin-vue": "^7.9.0",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.0.0",
     "stylus": "^0.54.8",
     "stylus-loader": "^3.0.2",
-    "vue-template-compiler": "^2.6.12",
-    "webpack": "^4.44.2"
+    "vue-template-compiler": "^2.6.12"
   }
 }
