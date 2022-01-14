@@ -20,12 +20,7 @@ import http from '../service/http';
 /* global BASE_URL */
 
 export default {
-  computed: {
-    id() {
-      return this.$route.params.id;
-    },
-  },
-
+  name: 'FolderList',
   data() {
     return {
       BASE_URL: BASE_URL,
@@ -33,10 +28,9 @@ export default {
       src: null,
     };
   },
-
-  methods: {
-    doView(src) {
-      this.src = src;
+  computed: {
+    id() {
+      return this.$route.params.id;
     },
   },
 
@@ -52,6 +46,12 @@ export default {
           this.doView(data[0]);
         }
       });
+  },
+
+  methods: {
+    doView(src) {
+      this.src = src;
+    },
   },
 };
 </script>

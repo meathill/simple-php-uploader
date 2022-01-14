@@ -11,6 +11,7 @@
 import http from '../service/http';
 
 export default {
+  name: 'ThumbnailsRoot',
   data() {
     return {
       list: null,
